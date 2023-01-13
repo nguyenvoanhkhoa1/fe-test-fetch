@@ -3,7 +3,7 @@ import { LCoin } from "../../assets/icons";
 
 const Card = ({ data }) => {
   return (
-    <div className=" w-[200px] h-60 shrink-0 border border-solid border-grey-08 shadow-shadowLow rounded bg-white  hover:bg-slate-50">
+    <div className=" w-[200px] h-60 shrink-0 border border-solid border-grey08 shadow-shadowLow rounded bg-white  hover:bg-slate-50">
       <img
         className=" w-[200px] h-[100px] object-center object-cover rounded-t"
         src={data?.imagePath}
