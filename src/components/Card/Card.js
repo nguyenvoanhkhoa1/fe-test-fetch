@@ -1,4 +1,5 @@
 import React from "react";
+import { LCoin } from "../../assets/icons";
 
 const Card = ({ data }) => {
   return (
@@ -9,7 +10,12 @@ const Card = ({ data }) => {
         alt=""
       />
       <div className="pt-4 px-4">
-        <h6 className=" text-base font-semibold leading-6 text-blueDark">
+        <h6
+          className={`${
+            data?.insufficient ? "text-grey03" : "text-blueDark"
+          } text-base font-semibold leading-6 flex items-center`}
+        >
+          {data?.insufficient && <LCoin className="mr-1" />}
           {data?.title}
         </h6>
         <p className="mt-2 text-base font-normal text-grey04">
