@@ -9,7 +9,7 @@ const Card = ({ data }) => {
         src={data?.imagePath}
         alt=""
       />
-      <div className="pt-4 px-[10px]">
+      <div className="pt-4 px-[14px] leading-[-0.005em]">
         <h6
           className={`${
             data?.insufficient ? "text-grey03" : "text-blueDark"

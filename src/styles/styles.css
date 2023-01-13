@@ -4,8 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Hellix";
+  src: local("Hellix"), url(../fonts/Hellix-Regular.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Hellix", sans-serif;
 }
 ::-webkit-scrollbar {
   display: none;
